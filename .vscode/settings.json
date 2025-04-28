@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Dont Touch The Lava.sln"
+    "dotnet.defaultSolution": "Dont-Touch-The-Lava.sln"
 }
