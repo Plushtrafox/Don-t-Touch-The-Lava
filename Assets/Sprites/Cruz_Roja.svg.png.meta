@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cruz_Roja.svg_0: 3800159652688991482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

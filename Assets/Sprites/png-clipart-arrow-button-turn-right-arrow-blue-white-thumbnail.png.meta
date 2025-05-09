@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      png-clipart-arrow-button-turn-right-arrow-blue-white-thumbnail_0: 8224379658261829574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
