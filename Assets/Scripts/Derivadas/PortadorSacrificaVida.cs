@@ -1,12 +1,4 @@
-public class PortadorSacrificaVida : PortadorBase
+public class PortadorSacrificaVida : PortadorJugable
 {
-    public bool UsarVida(float cantidad)
-    {
-        if (vidaActual > cantidad)
-        {
-            RecibirDaño(cantidad);
-            return true;
-        }
-        return false;
-    }
+    
 }

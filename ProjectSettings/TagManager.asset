@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemigo
+  - Proyectil
+  - enemigo
   layers:
   - Default
   - TransparentFX
@@ -38,11 +41,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Terreno
+    uniqueID: 485122659
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Terreno
-    uniqueID: 485122659
+  - name: Encima del terreno
+    uniqueID: 305133647
     locked: 0
   m_RenderingLayers:
   - Default

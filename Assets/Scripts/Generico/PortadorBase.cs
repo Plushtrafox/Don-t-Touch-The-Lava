@@ -3,30 +3,37 @@ using UnityEngine;
 public class PortadorBase : MonoBehaviour
 {
     public float vidaMaxima = 100f;
-    protected float vidaActual;
+    private float vidaActual;
+
+    private float CurrentLife
+    {
+        get => vidaActual;
+        set
+        {
+            vidaActual = Mathf.Clamp(value, 0, vidaMaxima);
+
+            if(vidaActual == 0) Muerte();
+        }
+    }
+
+    protected virtual void Start()
+    {
+        vidaActual = vidaMaxima;
+    }
 
     public virtual void RecibirDaño(float cantidad)
     {
-        vidaActual -= cantidad;
-        if (vidaActual <= 0)
-        {
-            Muerte();
-        }
+        CurrentLife -= cantidad;
     }
 
     public virtual void Curar(float cantidad)
     {
-        vidaActual = Mathf.Min(vidaActual + cantidad, vidaMaxima);
+        CurrentLife += cantidad;
     }
 
     protected virtual void Muerte()
     {
         Debug.Log($"{gameObject.name} ha muerto.");
         // Aquí puedes poner animación o destrucción
-    }
-
-    protected virtual void Start()
-    {
-        vidaActual = vidaMaxima;
     }
 }

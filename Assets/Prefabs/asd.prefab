@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enfriamiento: 4
-  prefabProyectil: {fileID: 0}
+  prefabProyectil: {fileID: 5544997634013613225, guid: 76c714e7a98148f489a3b19fabdf242f, type: 3}
   "da\xF1o": 10
 --- !u!1 &6106031203466639641
 GameObject:
@@ -153,8 +153,9 @@ GameObject:
   - component: {fileID: -5252456459754336296}
   - component: {fileID: -1599055161500108123}
   - component: {fileID: -3918224402205907844}
+  - component: {fileID: -8645137063870788127}
   m_Layer: 0
-  m_Name: ManaPlayer
+  m_Name: asd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,8 +220,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 305133647
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: -803321122, guid: 836ba81373ddf664c8a192783efe0ecd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -293,10 +294,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-1599055161500108123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,8 +311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaMaxima: 100
+  abilityController: {fileID: -3918224402205907844}
   manaMaximo: 100
-  manaActual: 0
 --- !u!114 &-3918224402205907844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,3 +328,16 @@ MonoBehaviour:
   habilidad1: {fileID: 5447350629470440220}
   habilidad2: {fileID: 1002571322855826779}
   habilidad3: {fileID: 8892145251541345153}
+--- !u!114 &-8645137063870788127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7249937734251089161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f082853d561171644a6e28b11eb5aebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 4
