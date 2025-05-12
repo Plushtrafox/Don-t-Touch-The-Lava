@@ -1,10 +1,11 @@
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class BarraVida : MonoBehaviour
 {
-    public Image rellenoBarraVida;
+    public UnityEngine.UI.Image rellenoBarraVida;
     private PlayerController playerController;
     private float vidaMaxima;
     void Start()
@@ -16,6 +17,11 @@ public class BarraVida : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rellenoBarraVida.illAmount = playerController.vida / vidaMaxima;
+        rellenoBarraVida.fillAmount = playerController.vida / vidaMaxima;
     }
+}
+
+internal class PlayerController
+{
+    internal readonly float vida;
 }
